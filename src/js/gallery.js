@@ -1,14 +1,15 @@
 const gallery = document.querySelector('.gallery');
-const searchInput = document.querySelector('.search-input');
-const testArr = { text: 'text', text: 'text', text: 'text' };
-searchInput.addEventListener('submit', findMovies);
+const searchForm = document.querySelector('.search-form');
+const testArr = ['text', 'text', 'text'];
 
-function createGallery(arr) {
-  console.log('hurra');
-  const markup = arr
+gallery.innerHTML = 'Find your movie';
+searchForm.addEventListener('submit', findMovies);
+
+function createGallery(array) {
+  const markup = array
     .map(item => {
       return `<div class="photo-card">
-        <img src="${item}" alt="${item}"/>
+        <img src="#" alt="it"/>
         <div class="info">
           <p class="info-item">
             <b>Likes</b>
@@ -33,10 +34,7 @@ function createGallery(arr) {
   gallery.innerHTML += markup;
 }
 function findMovies(e) {
-  console.log('hurra');
   e.preventDefault();
   gallery.innerHTML = '';
   createGallery(testArr);
-  console.log('hurra');
-  return;
 }
