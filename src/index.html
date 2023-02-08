@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Grupowy</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="content">
+      <div class="header">
+        <div class="header_content">
+          <form>
+            <input class="search-input" type="text" id="search" placeholder="search for a movie" />
+            <button class="search-button" type="submit"><img src="./images/search.svg" /></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="content">
+      <div class="gallery">
+
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="content">
+      <div class="footer-text">
+        <p>2020 | All Rights Reserved | Developed with <img src="./images/heart.png" /> by <a href="#">GoIT Students</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="index.js" type="module"></script>
+
 </html>
